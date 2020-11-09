@@ -1,3 +1,6 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  # verbe 'path', to: 'controller#action'
+  get 'ask', to: 'questions#ask' # afficher le form
+  # get '/url', to: 'nom controller#nom methode controller'
+  get 'answer', to: 'questions#answer'
 end
